@@ -1,46 +1,158 @@
-# Getting Started with Create React App
+# 🏛️ Maison Art & Luxury — Unified Gallery Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A next-level luxury art gallery web platform built with React & TypeScript, designed as a unified experience for art collectors, cultural patrons, and luxury enthusiasts.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎯 About The Project
 
-### `npm start`
+**Maison Art & Luxury** is a full-featured art gallery and luxury platform built as part of a **1-month internship challenge**. The goal was to design and develop a unified platform that blends high-end art curation with a luxury digital experience — handling real-world features like artwork browsing, artist profiles, event booking, wishlists, and private inquiries.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The platform is designed with a **dark luxury aesthetic** — inspired by Paris auction houses and high-end gallery spaces — using a rich gold, deep black, and warm ivory colour palette throughout.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🖼️ Gallery
+- Browse **12 premium artworks** across 5 categories — Abstract, Contemporary, Impressionist, Sculpture, Photography
+- **Filter by category** — instant client-side filtering
+- **Search** artworks by title, artist, or category
+- **Sort** by price (low/high), newest, or most liked
+- **Like system** — toggle likes with live count per artwork
+- **Wishlist toggle** — save/unsave artworks with heart button
+- **Artwork Detail Modal** — full description, medium, dimensions, price, inquiry & save actions
+- **Stats bar** — live counts of artworks, artists, collectors, countries
 
-### `npm run build`
+### 👨‍🎨 Artists
+- Dedicated profiles for **5 represented artists**
+- Bio, origin, specialty, exhibition history, and awards
+- Hover-to-colour portrait reveal effect
+- Works count badge per artist
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📅 Events
+- **5 upcoming events** — Vernissage, Private, Auction, Workshop, Symposium
+- One-click **seat reservation** with confirmation toast
+- Dress code and venue info per event
+- Colour-coded event type badges
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ❤️ Wishlist
+- Personal collection of saved artworks
+- **Total collection value** calculator
+- Bulk inquire all saved works at once
+- Remove individual works
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📬 Contact
+- Private enquiry form with name, email, phone, area of interest, message
+- **Form validation** with success confirmation screen
+- Gallery contact info — location, phone, email, hours
 
-### `npm run eject`
+### 🎨 UI/UX
+- Parallax hero section with animated shimmer title
+- **Toast notifications** for all user actions
+- Smooth card hover animations with image zoom
+- Animated page transitions (fade-up)
+- Fully responsive layout
+- Custom gold scrollbar
+- Sticky navbar with wishlist item counter
+- Corner decorative accents on hero
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Built With
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Technology | Purpose |
+|---|---|
+| **React 18** | UI framework |
+| **TypeScript** | Type safety |
+| **CSS-in-JS** | All styles written inline / in `<style>` tags |
+| **Google Fonts** | Cinzel · Cormorant Garamond · Jost |
+| **Unsplash** | Artwork & artist imagery |
+| **React Hooks** | useState, useEffect, useRef for all state & side effects |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> **No external UI libraries used** — all components built from scratch.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+maison-art/
+├── public/
+│   └── index.html          # Google Fonts loaded here
+├── src/
+│   ├── App.tsx             # Entire application — all pages, components, logic
+│   ├── App.css             # Empty (styles in App.tsx)
+│   ├── index.tsx           # React root entry point
+│   └── index.css           # Global reset + scrollbar styles
+├── .env.example            # Environment variable template
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+- Node.js v16 or above
+- npm v8 or above
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/maison-art.git
+
+# 2. Navigate into the project
+cd maison-art
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm start
+```
+
+The app will open at **http://localhost:3000**
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Gallery with filtering, search, sort
+- [x] Artwork detail modal
+- [x] Artist profiles page
+- [x] Event listing & seat booking
+- [x] Wishlist with value calculator
+- [x] Contact / enquiry form
+- [x] Like system with counter
+- [x] Toast notifications
+- [x] Responsive design
+- [ ] Supabase backend integration
+- [ ] User authentication (Login / Signup)
+- [ ] Real database for artworks & artists
+- [ ] Admin dashboard for gallery management
+- [ ] Stripe payment / inquiry flow
+- [ ] Deployment on Vercel
+
+---
+
+## 🎨 Design Decisions
+
+- **Dark luxury theme** — `#0A0804` background with `#C9A84C` gold accents, inspired by high-end auction house aesthetics
+- **Typography** — Cinzel for headings (classical, authoritative), Cormorant Garamond for body (elegant, editorial), Jost for labels (clean, modern)
+- **No component library** — every element custom-built to match the luxury brand identity
+- **Performance** — lazy-loaded images, passive scroll listeners, CSS transitions over JS animations
+
+---
+
+## 👩‍💻 Author
+
+**Priyadarshini Wani**
+
+---
+
+<div align="center">
+  Made with ♥ and a lot of gold — <strong>Maison Art & Luxury</strong>
+</div>ut the [React documentation](https://reactjs.org/).
